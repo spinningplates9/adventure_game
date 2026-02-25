@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/potionshop.dir/link.d CMakeFiles/potionshop.dir/code/PotionShop.cpp.o -o potionshop
