@@ -3,6 +3,8 @@
 
 CMakeFiles/potionshop.dir/code/PotionShop.cpp.o
  /home/mr_house/gamedev/PotionShop/code/PotionShop.cpp
+ /home/mr_house/gamedev/PotionShop/code/Messages.h
+ /home/mr_house/gamedev/PotionShop/code/Shop.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h

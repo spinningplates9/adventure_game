@@ -1,9 +1,6 @@
-#include <iostream>
 #include "Shop.h"
 #include "Messages.h"
 
-
-Shop shop;
 
 struct Traveler {
   float walletAmount = 100.f;
@@ -28,22 +25,24 @@ int main() {
 
   bool isRunning = true;
 
+  Shop shop;
+  Messages messages;
+
   while (isRunning) {
     // float clientDisposable = walletAmount;
 
-    messages.userInput;
-    std::cout << messages.welcomeMessage;
-    std::cin >> messages.userInput;
-    std::cout << messages.twoLineSkip;
+    messages.welcomeMessage();
+    std::string resultingInput = messages.getUserInput();
+    messages.twoLineSkip();
 
-    if (messages.userInput == "Quit" || messages.userInput == "quit") {
+    if (resultingInput == "Quit" || resultingInput == "quit") {
       isRunning = false;
     } 
-    else if (messages.userInput == "Shop" || messages.userInput == "shop") {
+    else if (resultingInput == "Shop" || resultingInput == "shop") {
 
       shop.shopTransaction(traveler.walletAmount);
     } 
-    else if (messages.userInput == "Quest" || messages.userInput == "quest") {
+    else if (resultingInput == "Quest" || resultingInput == "quest") {
       travelersQuest();
     }
   }

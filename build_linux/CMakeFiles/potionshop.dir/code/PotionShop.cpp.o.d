@@ -1,7 +1,8 @@
 CMakeFiles/potionshop.dir/code/PotionShop.cpp.o: \
  /home/mr_house/gamedev/PotionShop/code/PotionShop.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/15/iostream \
- /usr/include/c++/15/bits/requires_hosted.h \
+ /usr/include/stdc-predef.h /home/mr_house/gamedev/PotionShop/code/Shop.h \
+ /home/mr_house/gamedev/PotionShop/code/Messages.h \
+ /usr/include/c++/15/iostream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
