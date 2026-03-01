@@ -1,50 +1,63 @@
 #include "Shop.h"
+#include "Messages.h"
 
+Messages shopMessages;
 
 
 float Shop::getItemPrice(std::string resultingInput) {
     if (resultingInput == "Health" || resultingInput == "health") {
       return 19.99f;
-    } else if (resultingInput == "Mana" || resultingInput == "mana") {
+    } 
+    else if (resultingInput == "Mana" || resultingInput == "mana") {
       return 12.45f;
-    } else if (resultingInput == "Special" || resultingInput == "special") {
+    } 
+    else if (resultingInput == "Special" || resultingInput == "special") {
       return 59.99f;
     }
-  }
+    else {
+      return 0.0f;
+    }
+}
 
-  float Shop::calculateTransaction(float price, float clientAmount) {
-    float transactionTotal = clientAmount -= price;
-    std::cout << "Your total is: " << transactionTotal << shopMessages.twoLineSkip();
+float Shop::calculateTransaction(float price, float clientAmount) {
+  float transactionTotal = clientAmount -= price;
+  std::cout << "Your total is: " << transactionTotal << shopMessages.TwoLineSkip();
 
-    return transactionTotal;
-  }
+  return transactionTotal;
+}
 
-  float Shop::shopTransaction(float clientAmount) {
-    bool clientShopping = true;
-    while (clientShopping) {
+void Shop::shopTransaction() {
 
-      shopMessages.getUserInput();
-      std::cout << shopMessages.shopGreeting();
+  bool clientShopping = true;
 
-      if (shopMessages.getUserInput() == "Quit" || shopMessages.getUserInput() == "quit") {
-        std::cout << "Come again!\n\n";
-        clientShopping = false;
-      }
+  while (clientShopping) {
 
-      float price = getItemPrice(resultingInput);
+    std::cout << shopMessages.ShopGreeting();
+    std::string ClientChoice = shopMessages.GetUserInput();
+    std::cin >> ClientChoice;
 
+    if (ClientChoice != "Quit" || ClientChoice != "quit") {
+    
+      float price = getItemPrice(ClientChoice); // then put this in either else if or else statement
+                                                
+        // create if statement for when the player reaches a certain amount of kills or XP
+        //  then it has access to a special shop where more items are available for a higher
+        //  price
+        
       if (price > 0) {
 
-        std::cout << "That will cost: " << price << shopMessages.twoLineSkip();
+        std::cout << "That will cost: " << price << shopMessages.TwoLineSkip();
+        float transactionTotal = calculateTransaction(price, TravelerWallet.getWalletAmount());
 
-        float transactionTotal = calculateTransaction(price, clientAmount);
-
-        if (clientAmount < transactionTotal) {
+        if (TravelerWallet.getWalletAmount() < transactionTotal) {
           std::cout << "Looks like you ran out of dough. Now you gotta sweep the "
                        "floors.\n\n";
         }
-
-        return transactionTotal;
       }
     }
+    else {
+      std::cout << "Come again!\n\n";
+      clientShopping = false;
+    }
   }
+}

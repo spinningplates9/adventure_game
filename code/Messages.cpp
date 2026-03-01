@@ -3,24 +3,30 @@
 
 Messages::Messages() {}
 
-std::string Messages::getUserInput()
+std::string Messages::GetUserInput()
 {
   return userInput;
 }
 
-std::string Messages::welcomeMessage()
+std::string Messages::WelcomeMessage()
 {
   return startingMessage;
 }
 
-std::string Messages::shopGreeting()
+std::string Messages::ShopGreeting()
 {
   return shopGreet;
 }
 
-std::string Messages::twoLineSkip()
+std::string Messages::OneLineSkip()
 {
-  return skips;
+  return skip;
+}
+
+std::string Messages::TwoLineSkip()
+{
+  std::string twoSkip = skip + skip;
+  return twoSkip;
 }
 
 

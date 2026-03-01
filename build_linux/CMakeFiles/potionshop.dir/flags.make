@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -isystem /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include
 
 CXX_FLAGS = -g -std=gnu++20
 

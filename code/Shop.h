@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Messages.h"
+#include "Traveler.h"
 
 
 class Shop {
@@ -10,11 +11,11 @@ public:
 
   float calculateTransaction(float price, float clientAmount);
   
-  float shopTransaction(float clientAmount);
+  void shopTransaction();
 
 protected:
 
-  std::string resultingInput = shopMessages.getUserInput();
-  Messages shopMessages;
+  Traveler TravelerWallet;
+
 };
 

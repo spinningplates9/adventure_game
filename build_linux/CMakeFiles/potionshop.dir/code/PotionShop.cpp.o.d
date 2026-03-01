@@ -1,8 +1,15 @@
 CMakeFiles/potionshop.dir/code/PotionShop.cpp.o: \
  /home/mr_house/gamedev/PotionShop/code/PotionShop.cpp \
- /usr/include/stdc-predef.h /home/mr_house/gamedev/PotionShop/code/Shop.h \
- /home/mr_house/gamedev/PotionShop/code/Messages.h \
- /usr/include/c++/15/iostream /usr/include/c++/15/bits/requires_hosted.h \
+ /usr/include/stdc-predef.h \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Config.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Clock.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Export.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Time.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Err.hpp \
+ /usr/include/c++/15/ostream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
@@ -11,7 +18,7 @@ CMakeFiles/potionshop.dir/code/PotionShop.cpp.o: \
  /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/15/pstl/pstl_config.h /usr/include/c++/15/ostream \
+ /usr/include/c++/15/pstl/pstl_config.h \
  /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
  /usr/include/c++/15/iosfwd /usr/include/c++/15/bits/stringfwd.h \
  /usr/include/c++/15/bits/memoryfwd.h /usr/include/c++/15/bits/postypes.h \
@@ -138,5 +145,107 @@ CMakeFiles/potionshop.dir/code/PotionShop.cpp.o: \
  /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
- /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc
+ /usr/include/c++/15/bits/ostream.tcc \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/FileInputStream.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/InputStream.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Lock.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Mutex.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Sleep.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/String.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Utf.hpp \
+ /usr/include/c++/15/algorithm /usr/include/c++/15/bits/stl_algo.h \
+ /usr/include/c++/15/bits/algorithmfwd.h \
+ /usr/include/c++/15/bits/stl_heap.h \
+ /usr/include/c++/15/bits/uniform_int_dist.h \
+ /usr/include/c++/15/bits/stl_tempbuf.h \
+ /usr/include/c++/15/bits/ranges_algo.h \
+ /usr/include/c++/15/bits/ranges_algobase.h \
+ /usr/include/c++/15/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/locale_facets_nonio.h /usr/include/c++/15/ctime \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
+ /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/15/bits/locale_conv.h \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Utf.inl \
+ /usr/include/c++/15/iterator /usr/include/c++/15/bits/stream_iterator.h \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/String.inl \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Thread.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Thread.inl \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/ThreadLocal.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.inl \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Vector2.inl \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Vector3.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/System/Vector3.inl \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Clipboard.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Export.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Context.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Event.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Joystick.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Sensor.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Touch.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
+ /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Window.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/WindowBase.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/CircleShape.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Shape.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Transform.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Rect.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Rect.inl \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/ConvexShape.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Font.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Glyph.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Texture.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Image.hpp \
+ /usr/include/c++/15/map /usr/include/c++/15/bits/stl_tree.h \
+ /usr/include/c++/15/ext/aligned_buffer.h \
+ /usr/include/c++/15/bits/node_handle.h \
+ /usr/include/c++/15/bits/stl_map.h \
+ /usr/include/c++/15/bits/stl_multimap.h \
+ /usr/include/c++/15/bits/erase_if.h \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/View.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/RenderTexture.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/RenderWindow.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Shader.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Glsl.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Glsl.inl \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
+ /home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/mr_house/gamedev/PotionShop/code/Shop.h \
+ /home/mr_house/gamedev/PotionShop/code/Messages.h \
+ /usr/include/c++/15/iostream /usr/include/c++/15/istream \
+ /usr/include/c++/15/bits/istream.tcc \
+ /home/mr_house/gamedev/PotionShop/code/Traveler.h \
+ /home/mr_house/gamedev/PotionShop/code/Quest.h

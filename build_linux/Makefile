@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /home/mr_house/gamedev/PotionShop/build_linux
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/mr_house/gamedev/PotionShop/build_linux/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -84,6 +104,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -129,6 +194,95 @@ potionshop/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/build
 .PHONY : potionshop/fast
 
+#=============================================================================
+# Target rules for targets named sfml-system
+
+# Build rule for target.
+sfml-system: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-system
+.PHONY : sfml-system
+
+# fast build rule for target.
+sfml-system/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build
+.PHONY : sfml-system/fast
+
+#=============================================================================
+# Target rules for targets named sfml-window
+
+# Build rule for target.
+sfml-window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-window
+.PHONY : sfml-window
+
+# fast build rule for target.
+sfml-window/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build.make _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build
+.PHONY : sfml-window/fast
+
+#=============================================================================
+# Target rules for targets named sfml-network
+
+# Build rule for target.
+sfml-network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-network
+.PHONY : sfml-network
+
+# fast build rule for target.
+sfml-network/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build
+.PHONY : sfml-network/fast
+
+#=============================================================================
+# Target rules for targets named sfml-graphics
+
+# Build rule for target.
+sfml-graphics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-graphics
+.PHONY : sfml-graphics
+
+# fast build rule for target.
+sfml-graphics/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
+.PHONY : sfml-graphics/fast
+
+#=============================================================================
+# Target rules for targets named sfml-audio
+
+# Build rule for target.
+sfml-audio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-audio
+.PHONY : sfml-audio
+
+# fast build rule for target.
+sfml-audio/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
+.PHONY : sfml-audio/fast
+
+code/Messages.o: code/Messages.cpp.o
+.PHONY : code/Messages.o
+
+# target to build an object file
+code/Messages.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Messages.cpp.o
+.PHONY : code/Messages.cpp.o
+
+code/Messages.i: code/Messages.cpp.i
+.PHONY : code/Messages.i
+
+# target to preprocess a source file
+code/Messages.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Messages.cpp.i
+.PHONY : code/Messages.cpp.i
+
+code/Messages.s: code/Messages.cpp.s
+.PHONY : code/Messages.s
+
+# target to generate assembly for a file
+code/Messages.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Messages.cpp.s
+.PHONY : code/Messages.cpp.s
+
 code/PotionShop.o: code/PotionShop.cpp.o
 .PHONY : code/PotionShop.o
 
@@ -153,6 +307,78 @@ code/PotionShop.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/PotionShop.cpp.s
 .PHONY : code/PotionShop.cpp.s
 
+code/Quest.o: code/Quest.cpp.o
+.PHONY : code/Quest.o
+
+# target to build an object file
+code/Quest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Quest.cpp.o
+.PHONY : code/Quest.cpp.o
+
+code/Quest.i: code/Quest.cpp.i
+.PHONY : code/Quest.i
+
+# target to preprocess a source file
+code/Quest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Quest.cpp.i
+.PHONY : code/Quest.cpp.i
+
+code/Quest.s: code/Quest.cpp.s
+.PHONY : code/Quest.s
+
+# target to generate assembly for a file
+code/Quest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Quest.cpp.s
+.PHONY : code/Quest.cpp.s
+
+code/Shop.o: code/Shop.cpp.o
+.PHONY : code/Shop.o
+
+# target to build an object file
+code/Shop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Shop.cpp.o
+.PHONY : code/Shop.cpp.o
+
+code/Shop.i: code/Shop.cpp.i
+.PHONY : code/Shop.i
+
+# target to preprocess a source file
+code/Shop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Shop.cpp.i
+.PHONY : code/Shop.cpp.i
+
+code/Shop.s: code/Shop.cpp.s
+.PHONY : code/Shop.s
+
+# target to generate assembly for a file
+code/Shop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Shop.cpp.s
+.PHONY : code/Shop.cpp.s
+
+code/Traveler.o: code/Traveler.cpp.o
+.PHONY : code/Traveler.o
+
+# target to build an object file
+code/Traveler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Traveler.cpp.o
+.PHONY : code/Traveler.cpp.o
+
+code/Traveler.i: code/Traveler.cpp.i
+.PHONY : code/Traveler.i
+
+# target to preprocess a source file
+code/Traveler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Traveler.cpp.i
+.PHONY : code/Traveler.cpp.i
+
+code/Traveler.s: code/Traveler.cpp.s
+.PHONY : code/Traveler.s
+
+# target to generate assembly for a file
+code/Traveler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/potionshop.dir/build.make CMakeFiles/potionshop.dir/code/Traveler.cpp.s
+.PHONY : code/Traveler.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,11 +386,34 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... potionshop"
+	@echo "... sfml-audio"
+	@echo "... sfml-graphics"
+	@echo "... sfml-network"
+	@echo "... sfml-system"
+	@echo "... sfml-window"
+	@echo "... code/Messages.o"
+	@echo "... code/Messages.i"
+	@echo "... code/Messages.s"
 	@echo "... code/PotionShop.o"
 	@echo "... code/PotionShop.i"
 	@echo "... code/PotionShop.s"
+	@echo "... code/Quest.o"
+	@echo "... code/Quest.i"
+	@echo "... code/Quest.s"
+	@echo "... code/Shop.o"
+	@echo "... code/Shop.i"
+	@echo "... code/Shop.s"
+	@echo "... code/Traveler.o"
+	@echo "... code/Traveler.i"
+	@echo "... code/Traveler.s"
 .PHONY : help
 
 

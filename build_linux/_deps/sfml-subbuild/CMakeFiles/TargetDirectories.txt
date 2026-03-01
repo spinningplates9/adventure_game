@@ -1,0 +1,3 @@
+/home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
+/home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-subbuild/CMakeFiles/edit_cache.dir
+/home/mr_house/gamedev/PotionShop/build_linux/_deps/sfml-subbuild/CMakeFiles/rebuild_cache.dir

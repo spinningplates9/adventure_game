@@ -1,0 +1,37 @@
+====================================================
+=                                                  = 
+=                     GAME PLAN                    =
+=                                                  = 
+====================================================
+
+
+
+!! Errand simulator !!
+
+- You go talk to people in the city who seem like they need help and do various kinds of errands (2-3)
+  - Errands can be:
+    - Obtaining a lost item
+    - Fighting a band of demon-jocks
+    - Deliver pizza to a mysterious phone number
+    
+- After each errand, the player is rewarded money to spend at the electronics store.
+  - These items can be:
+      - A video game console with a video game bundled
+      - A new stove
+      - A portable music player
+
+
+* Draw a 2D pixel art map using a tilemapping (very small btw) * 
+
+*** Get character to move around the map *** IN PROGRESS
+
+* Create interaction system when you click 'E' and a text box pulls up on NPCs and runs a if-condition check
+    when the interaction is a pickupable item (might be a big feature)
+
+* Develop a way to dynamically change health and currency values in the shop first
+    so that the quests will be easier to pass and change values
+
+* QUEST SYSTEM:
+  - 2 Types of Quests 
+    a. Battle
+    b. Search and find

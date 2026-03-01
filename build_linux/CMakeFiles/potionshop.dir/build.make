@@ -72,10 +72,24 @@ include CMakeFiles/potionshop.dir/flags.make
 CMakeFiles/potionshop.dir/codegen:
 .PHONY : CMakeFiles/potionshop.dir/codegen
 
+CMakeFiles/potionshop.dir/code/Messages.cpp.o: CMakeFiles/potionshop.dir/flags.make
+CMakeFiles/potionshop.dir/code/Messages.cpp.o: /home/mr_house/gamedev/PotionShop/code/Messages.cpp
+CMakeFiles/potionshop.dir/code/Messages.cpp.o: CMakeFiles/potionshop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mr_house/gamedev/PotionShop/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/potionshop.dir/code/Messages.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/potionshop.dir/code/Messages.cpp.o -MF CMakeFiles/potionshop.dir/code/Messages.cpp.o.d -o CMakeFiles/potionshop.dir/code/Messages.cpp.o -c /home/mr_house/gamedev/PotionShop/code/Messages.cpp
+
+CMakeFiles/potionshop.dir/code/Messages.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/potionshop.dir/code/Messages.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mr_house/gamedev/PotionShop/code/Messages.cpp > CMakeFiles/potionshop.dir/code/Messages.cpp.i
+
+CMakeFiles/potionshop.dir/code/Messages.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/potionshop.dir/code/Messages.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mr_house/gamedev/PotionShop/code/Messages.cpp -o CMakeFiles/potionshop.dir/code/Messages.cpp.s
+
 CMakeFiles/potionshop.dir/code/PotionShop.cpp.o: CMakeFiles/potionshop.dir/flags.make
 CMakeFiles/potionshop.dir/code/PotionShop.cpp.o: /home/mr_house/gamedev/PotionShop/code/PotionShop.cpp
 CMakeFiles/potionshop.dir/code/PotionShop.cpp.o: CMakeFiles/potionshop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mr_house/gamedev/PotionShop/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/potionshop.dir/code/PotionShop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mr_house/gamedev/PotionShop/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/potionshop.dir/code/PotionShop.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/potionshop.dir/code/PotionShop.cpp.o -MF CMakeFiles/potionshop.dir/code/PotionShop.cpp.o.d -o CMakeFiles/potionshop.dir/code/PotionShop.cpp.o -c /home/mr_house/gamedev/PotionShop/code/PotionShop.cpp
 
 CMakeFiles/potionshop.dir/code/PotionShop.cpp.i: cmake_force
@@ -86,18 +100,72 @@ CMakeFiles/potionshop.dir/code/PotionShop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/potionshop.dir/code/PotionShop.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mr_house/gamedev/PotionShop/code/PotionShop.cpp -o CMakeFiles/potionshop.dir/code/PotionShop.cpp.s
 
+CMakeFiles/potionshop.dir/code/Quest.cpp.o: CMakeFiles/potionshop.dir/flags.make
+CMakeFiles/potionshop.dir/code/Quest.cpp.o: /home/mr_house/gamedev/PotionShop/code/Quest.cpp
+CMakeFiles/potionshop.dir/code/Quest.cpp.o: CMakeFiles/potionshop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mr_house/gamedev/PotionShop/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/potionshop.dir/code/Quest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/potionshop.dir/code/Quest.cpp.o -MF CMakeFiles/potionshop.dir/code/Quest.cpp.o.d -o CMakeFiles/potionshop.dir/code/Quest.cpp.o -c /home/mr_house/gamedev/PotionShop/code/Quest.cpp
+
+CMakeFiles/potionshop.dir/code/Quest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/potionshop.dir/code/Quest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mr_house/gamedev/PotionShop/code/Quest.cpp > CMakeFiles/potionshop.dir/code/Quest.cpp.i
+
+CMakeFiles/potionshop.dir/code/Quest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/potionshop.dir/code/Quest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mr_house/gamedev/PotionShop/code/Quest.cpp -o CMakeFiles/potionshop.dir/code/Quest.cpp.s
+
+CMakeFiles/potionshop.dir/code/Shop.cpp.o: CMakeFiles/potionshop.dir/flags.make
+CMakeFiles/potionshop.dir/code/Shop.cpp.o: /home/mr_house/gamedev/PotionShop/code/Shop.cpp
+CMakeFiles/potionshop.dir/code/Shop.cpp.o: CMakeFiles/potionshop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mr_house/gamedev/PotionShop/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/potionshop.dir/code/Shop.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/potionshop.dir/code/Shop.cpp.o -MF CMakeFiles/potionshop.dir/code/Shop.cpp.o.d -o CMakeFiles/potionshop.dir/code/Shop.cpp.o -c /home/mr_house/gamedev/PotionShop/code/Shop.cpp
+
+CMakeFiles/potionshop.dir/code/Shop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/potionshop.dir/code/Shop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mr_house/gamedev/PotionShop/code/Shop.cpp > CMakeFiles/potionshop.dir/code/Shop.cpp.i
+
+CMakeFiles/potionshop.dir/code/Shop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/potionshop.dir/code/Shop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mr_house/gamedev/PotionShop/code/Shop.cpp -o CMakeFiles/potionshop.dir/code/Shop.cpp.s
+
+CMakeFiles/potionshop.dir/code/Traveler.cpp.o: CMakeFiles/potionshop.dir/flags.make
+CMakeFiles/potionshop.dir/code/Traveler.cpp.o: /home/mr_house/gamedev/PotionShop/code/Traveler.cpp
+CMakeFiles/potionshop.dir/code/Traveler.cpp.o: CMakeFiles/potionshop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mr_house/gamedev/PotionShop/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/potionshop.dir/code/Traveler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/potionshop.dir/code/Traveler.cpp.o -MF CMakeFiles/potionshop.dir/code/Traveler.cpp.o.d -o CMakeFiles/potionshop.dir/code/Traveler.cpp.o -c /home/mr_house/gamedev/PotionShop/code/Traveler.cpp
+
+CMakeFiles/potionshop.dir/code/Traveler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/potionshop.dir/code/Traveler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mr_house/gamedev/PotionShop/code/Traveler.cpp > CMakeFiles/potionshop.dir/code/Traveler.cpp.i
+
+CMakeFiles/potionshop.dir/code/Traveler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/potionshop.dir/code/Traveler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mr_house/gamedev/PotionShop/code/Traveler.cpp -o CMakeFiles/potionshop.dir/code/Traveler.cpp.s
+
 # Object files for target potionshop
 potionshop_OBJECTS = \
-"CMakeFiles/potionshop.dir/code/PotionShop.cpp.o"
+"CMakeFiles/potionshop.dir/code/Messages.cpp.o" \
+"CMakeFiles/potionshop.dir/code/PotionShop.cpp.o" \
+"CMakeFiles/potionshop.dir/code/Quest.cpp.o" \
+"CMakeFiles/potionshop.dir/code/Shop.cpp.o" \
+"CMakeFiles/potionshop.dir/code/Traveler.cpp.o"
 
 # External object files for target potionshop
 potionshop_EXTERNAL_OBJECTS =
 
+potionshop: CMakeFiles/potionshop.dir/code/Messages.cpp.o
 potionshop: CMakeFiles/potionshop.dir/code/PotionShop.cpp.o
+potionshop: CMakeFiles/potionshop.dir/code/Quest.cpp.o
+potionshop: CMakeFiles/potionshop.dir/code/Shop.cpp.o
+potionshop: CMakeFiles/potionshop.dir/code/Traveler.cpp.o
 potionshop: CMakeFiles/potionshop.dir/build.make
 potionshop: CMakeFiles/potionshop.dir/compiler_depend.ts
+potionshop: _deps/sfml-build/lib/libsfml-graphics-d.so.2.6.2
+potionshop: _deps/sfml-build/lib/libsfml-audio-d.so.2.6.2
+potionshop: _deps/sfml-build/lib/libsfml-window-d.so.2.6.2
+potionshop: _deps/sfml-build/lib/libsfml-system-d.so.2.6.2
 potionshop: CMakeFiles/potionshop.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mr_house/gamedev/PotionShop/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable potionshop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mr_house/gamedev/PotionShop/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable potionshop"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/potionshop.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
